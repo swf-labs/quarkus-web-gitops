@@ -1,0 +1,15 @@
+app:
+  name: my-quarkus-app
+  namespace: my-quarkus-app-dev
+  cluster: .apps.cluster-xxxxx.xxxxx.sandbox123.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/swf-labs/quarkus-web
+  org: swf-labs
+  name: quarkus-web
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: my-quarkus-app
+  tag: latest
